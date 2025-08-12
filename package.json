@@ -1,0 +1,14 @@
+{
+  "name": "banking-app-monorepo",
+  "version": "1.0.0",
+  "description": "A monorepo for the full-stack banking application.",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=client",
+    "build": "npm run build --workspace=client"
+  }
+}
