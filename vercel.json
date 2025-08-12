@@ -1,45 +1,15 @@
 {
   "version": 2,
-  "projects": [
+  "builds": [
     {
-      "name": "banking-app-frontend",
-      "rootDirectory": "client",
-      "framework": "create-react-app",
-      "outputDirectory": "build"
-    },
-    {
-      "name": "banking-app-backend",
-      "rootDirectory": "server",
-      "framework": "@vercel/node"
+      "src": "server/server.js",
+      "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/client"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "http://localhost:3000,https://<your-vercel-domain>.vercel.app"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET,POST,PUT,DELETE,OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type,Authorization"
-        }
-      ]
+      "src": "/api/(.*)",
+      "dest": "server/server.js"
     }
   ]
 }
