@@ -1,0 +1,88 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+.settings-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.settings-card h2 {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.settings-form {
+    text-align: left;
+}
+
+.settings-group {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    background-color: var(--light-bg);
+}
+
+.settings-group h3 {
+    color: var(--dark-text);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 10px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 10px;
+    min-width: 18px;
+    min-height: 18px;
+    cursor: pointer;
+}
+
+.form-check label {
+    font-size: 1rem;
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.settings-indent {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.settings-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.settings-back-btn {
+    background-color: var(--secondary-color);
+}
+
+.settings-back-btn:hover {
+    background-color: #5a6268;
+}
+
+.settings-loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}

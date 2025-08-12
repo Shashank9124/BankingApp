@@ -1,0 +1,58 @@
+.transaction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+.transaction-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.transaction-card h2 {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.transaction-card .form-group {
+    text-align: left;
+}
+
+.transaction-card .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Category Selector specific styles */
+.category-selector .add-category-section {
+    margin-top: 10px;
+}
+
+.category-selector .add-category-section button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.category-selector .add-category-form {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.category-selector .add-category-form input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,139 @@
+.notifications-dropdown-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.notifications-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.notifications-icon:hover {
+    color: #f8f9fa;
+}
+
+.unread-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--danger-color);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.notifications-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--dark-text);
+}
+
+.dropdown-header a {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.dropdown-header a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-notification-item {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-notification-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-notification-item.unread {
+    background-color: #eaf6ff;
+}
+
+.dropdown-notification-item.unread:hover {
+    background-color: #d6eaff;
+}
+
+.dropdown-notification-item.read:hover {
+    background-color: var(--light-bg);
+}
+
+.dropdown-notification-item .notification-title {
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.dropdown-notification-item .notification-message {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-top: 5px;
+}
+
+.dropdown-notification-item .notification-date {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.dropdown-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dropdown-footer button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.no-notifications-message {
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 20px 0;
+}

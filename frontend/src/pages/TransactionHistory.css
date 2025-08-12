@@ -1,0 +1,138 @@
+.history-container {
+    padding: 30px 0;
+}
+
+.history-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+/* --- NEW STYLES FOR STATEMENT GENERATOR --- */
+.statement-generator {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.statement-generator h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+    font-size: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 10px;
+}
+
+.statement-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.statement-form .form-group {
+    flex: 1 1 150px;
+    margin-bottom: 0;
+}
+
+.statement-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.statement-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.statement-form .btn {
+    flex: 1 1 100%;
+    padding: 10px;
+    font-size: 1rem;
+    height: 44px;
+}
+/* --- END NEW STYLES --- */
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.history-type {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.transaction-description {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.history-amount-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.history-amount {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.history-date {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+}
+
+.transaction-deposit .transaction-amount,
+.transaction-transferIn .transaction-amount {
+    color: var(--success-color);
+}
+
+.transaction-withdrawal .transaction-amount,
+.transaction-transferOut .transaction-amount {
+    color: var(--danger-color);
+}
+
+.no-transactions {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}

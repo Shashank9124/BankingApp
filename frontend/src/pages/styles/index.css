@@ -1,0 +1,28 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+}
+
+input, button {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #155eb9;
+}

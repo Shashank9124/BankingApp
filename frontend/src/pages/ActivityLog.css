@@ -1,0 +1,65 @@
+.activity-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+.activity-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+
+.activity-card h2 {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.activity-table th,
+.activity-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
+}
+
+.activity-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.activity-table tbody tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.activity-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.no-activity-message,
+.activity-loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}

@@ -1,0 +1,79 @@
+.admin-dashboard-container {
+    padding: 30px 0;
+}
+
+.admin-dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.admin-section {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.admin-section h3 {
+    margin-bottom: 20px;
+    color: var(--dark-text);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
+}
+
+.admin-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.admin-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.transaction-amount-deposit,
+.transaction-amount-transferIn {
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.transaction-amount-withdrawal,
+.transaction-amount-transferOut {
+    color: var(--danger-color);
+    font-weight: bold;
+}
+
+.admin-loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}

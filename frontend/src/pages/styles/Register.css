@@ -1,0 +1,142 @@
+/* src/pages/styles/Register.css */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #004d99 0%, #003366 100%);
+  padding: 20px;
+}
+
+.register-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register-header h2 {
+  color: #004d99;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #004d99;
+  outline: none;
+}
+
+.register-button {
+  width: 100%;
+  padding: 1rem;
+  background: #004d99;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-button:hover {
+  background: #003366;
+}
+
+.register-button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  background: #f8d7da;
+  text-align: center;
+}
+
+.register-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-link {
+  margin-bottom: 1rem;
+}
+
+.login-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #004d99;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.login-button:hover {
+  background: #f0f0f0;
+}
+
+.additional-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.additional-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.additional-links a:hover {
+  color: #004d99;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .additional-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

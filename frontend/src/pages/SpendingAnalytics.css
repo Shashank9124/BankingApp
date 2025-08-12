@@ -1,0 +1,159 @@
+.analytics-container {
+    padding: 30px 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.analytics-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.analytics-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chart-section, .table-section {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-section h3, .table-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.date-filter-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.date-filter-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.date-filter-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.date-filter-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.date-filter-form input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .date-filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.budget-chart-wrapper {
+    margin-bottom: 20px;
+}
+
+.total-spending {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--danger-color);
+}
+
+.spending-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.spending-table th, .spending-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.spending-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.spending-table tbody tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.spending-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.over-budget {
+    color: var(--danger-color);
+    font-weight: bold;
+}
+
+.under-budget {
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.budget-management {
+    text-align: center;
+}
+
+.budget-management .primary-btn {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.edit-table td input {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.analytics-loading, .no-data-message {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+    .analytics-content {
+        flex-direction: row;
+    }
+    .chart-section, .table-section {
+        flex: 1;
+    }
+}
