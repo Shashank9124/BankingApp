@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api', // Your backend API base URL
+    baseURL: 'https://banking-4fdn1v1cb-shashanks-projects-a139df97.vercel.app/api', // <-- Your Vercel URL
     headers: {
         'Content-Type': 'application/json',
     },
